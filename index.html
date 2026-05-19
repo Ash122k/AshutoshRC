@@ -1,10 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashutosh Roy Choudhury</title>
+  <meta name="description" content="Academic homepage of Ashutosh Roy Choudhury." />
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #1f2933;
+      --muted: #5f6c7b;
+      --card: #ffffff;
+      --accent: #234e70;
+      --border: #d9e2ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 70px;
+    }
+
+    header {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.1;
+      margin: 0 0 10px;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    nav a, .button {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover, .button:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fbfbfa;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    code {
+      background: #edf2f7;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, this is my website!</h1>
-  <p>I made this using GitHub Pages.</p>
+  <main class="container">
+    <header>
+      <h1>Ashutosh Roy Choudhury</h1>
+      <p class="subtitle">PhD student in mathematics at Boston University.</p>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research interests</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a graduate student in mathematics at Boston University. I am co-advised by
+        Keerthi Madapusi at Boston College and Alexander Bertoloni Meli at Boston University.
+      </p>
+      <p>
+        Before coming to Boston University, I was an undergraduate at Chennai Mathematical
+        Institute and completed my master's at the Tata Institute of Fundamental Research, Mumbai.
+      </p>
+    </section>
+
+    <section id="research">
+      <h2>Research interests</h2>
+      <p>
+        I am interested in arithmetic geometry and algebraic geometry. I am currently
+        working towards a theory of log syntomification for log schemes, following the theory developed by Bhatt, Lurie, and Drinfeld.
+      </p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching at Boston University</h2>
+      <p class="meta">I will add course catalogue links and further details here.</p>
+      <ul>
+        <li><strong>Fall 2024:</strong> Linear Algebra</li>
+        <li><strong>Spring 2025:</strong> Complex Analysis</li>
+        <li><strong>Fall 2025:</strong> Calculus for Social Sciences</li>
+        <li><strong>Spring 2026:</strong> Complex Analysis</li>
+        <li><strong>Summer I 2026:</strong> Calculus II, MA 124</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a class="button" href="mailto:ashutosh@bu.edu">ashutosh@bu.edu</a></p>
+      <p>
+        Office 536<br />
+        Boston University<br />
+        Center for Computing &amp; Data Sciences (CDS)<br />
+        665 Commonwealth Avenue<br />
+        Boston, MA 02215
+      </p>
+    </section>
+
+    <footer>
+      Last updated 2026. Built with GitHub Pages.
+    </footer>
+  </main>
 </body>
 </html>
