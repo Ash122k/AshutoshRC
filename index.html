@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,15 @@
       padding: 36px 0 28px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 32px;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -103,19 +113,6 @@
       font-size: 0.95rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-    }
-
-    .mini-card {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-      background: #fbfbfa;
-    }
-
     footer {
       color: var(--muted);
       font-size: 0.9rem;
@@ -129,14 +126,6 @@
       border-radius: 5px;
     }
   </style>
-  .profile-photo {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  margin-bottom: 20px;
-}
 </head>
 <body>
   <main class="container">
@@ -157,10 +146,14 @@
       <h2>About</h2>
       <p>
         I am a graduate student in mathematics at Boston University. I am co-advised by
-        <a class="button" href="https://www.keerthimadapusi.com/index.html">Keerthi Madapusi</a> at Boston College and <a class="button" href="https://math.bu.edu/people/abertolo/">Alexander Bertoloni Meli</a> at Boston University.
+        <a class="button" href="https://www.keerthimadapusi.com/index.html">Keerthi Madapusi</a> at Boston College and
+        <a class="button" href="https://math.bu.edu/people/abertolo/">Alexander Bertoloni Meli</a> at Boston University.
       </p>
       <p>
-        Before coming to Boston University, I was an undergraduate at <a class="button" href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a> and completed my master's at the <a class="button" href="https://mathweb.tifr.res.in/">Tata Institute of Fundamental Research, Mumbai</a>.
+        Before coming to Boston University, I was an undergraduate at
+        <a class="button" href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a>
+        and completed my master's at the
+        <a class="button" href="https://mathweb.tifr.res.in/">Tata Institute of Fundamental Research, Mumbai</a>.
       </p>
     </section>
 
@@ -213,3 +206,4 @@
   </main>
 </body>
 </html>
+```
