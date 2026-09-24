@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashutosh Roy Choudhury</title>
   <meta name="description" content="Academic homepage of Ashutosh Roy Choudhury." />
+
   <style>
     :root {
       --bg: #f7f7f5;
@@ -40,15 +42,13 @@
     }
 
     .profile-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: contain;
-      object-position: center top;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
       border-radius: 50%;
       border: 1px solid var(--border);
-      background: #ffffff;
-      padding: 6px;
       margin-bottom: 20px;
+      display: block;
     }
 
     h1 {
@@ -71,14 +71,16 @@
       margin-top: 18px;
     }
 
-    nav a, .button {
+    nav a,
+    .button {
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
       border-bottom: 1px solid transparent;
     }
 
-    nav a:hover, .button:hover {
+    nav a:hover,
+    .button:hover {
       border-bottom-color: var(--accent);
     }
 
@@ -97,6 +99,11 @@
       letter-spacing: -0.02em;
     }
 
+    h3 {
+      font-size: 1.05rem;
+      margin: 18px 0 8px;
+    }
+
     p {
       margin: 0 0 12px;
     }
@@ -107,7 +114,7 @@
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .meta {
@@ -121,66 +128,113 @@
       text-align: center;
       padding-top: 20px;
     }
-
-    code {
-      background: #edf2f7;
-      padding: 2px 5px;
-      border-radius: 5px;
-    }
   </style>
 </head>
+
 <body>
   <main class="container">
+
     <header>
-      <img class="profile-photo" src="Screenshot_20260422-012636.png" alt="Photo of Ashutosh Roy Choudhury" />
+      <img
+        class="profile-photo"
+        src="Screenshot_20260422-012636.png"
+        alt="Photo of Ashutosh Roy Choudhury"
+      />
+
       <h1>Ashutosh Roy Choudhury</h1>
-      <p class="subtitle">PhD student in mathematics at Boston University.</p>
+
+      <p class="subtitle">
+        PhD student in mathematics at Boston University.
+      </p>
+
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#research">Research interests</a>
-        <a href="#papers">Papers</a>
+        <a href="#papers">Research</a>
         <a href="#teaching">Teaching</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
+
     <section id="about">
       <h2>About</h2>
+
       <p>
-        I am a graduate student in mathematics at Boston University. I am co-advised by
-        <a class="button" href="https://www.keerthimadapusi.com/index.html">Keerthi Madapusi</a> at Boston College and
-        <a class="button" href="https://math.bu.edu/people/abertolo/">Alexander Bertoloni Meli</a> at Boston University.
+        I am a graduate student in mathematics at Boston University.
+        I am co-advised by
+        <a class="button"
+           href="https://www.keerthimadapusi.com/index.html">
+          Keerthi Madapusi
+        </a>
+        at Boston College and
+        <a class="button"
+           href="https://math.bu.edu/people/abertolo/">
+          Alexander Bertoloni Meli
+        </a>
+        at Boston University.
       </p>
+
       <p>
         Before coming to Boston University, I was an undergraduate at
-        <a class="button" href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a>
+        <a class="button" href="https://www.cmi.ac.in/">
+          Chennai Mathematical Institute
+        </a>
         and completed my master's at the
-        <a class="button" href="https://mathweb.tifr.res.in/">Tata Institute of Fundamental Research, Mumbai</a>.
+        <a class="button" href="https://mathweb.tifr.res.in/">
+          Tata Institute of Fundamental Research, Mumbai
+        </a>.
       </p>
     </section>
+
 
     <section id="research">
       <h2>Research interests</h2>
+
       <p>
-        I am interested in arithmetic geometry and algebraic geometry. I am currently
-        working towards a theory of log syntomification for log schemes, following the theory developed by Bhatt, Lurie, and Drinfeld.
+        I am interested in arithmetic geometry and algebraic geometry.
+        I am currently working towards a theory of log syntomification
+        for log schemes, following the theory developed by Bhatt,
+        Lurie, and Drinfeld.
       </p>
     </section>
 
+
     <section id="papers">
       <h2>Research</h2>
+
+      <h3>Publication</h3>
+
       <ul>
         <li>
-          <a class="button" href="https://arxiv.org/abs/2412.05092">A Construction of the Symmetric Monoidal Structure of the Geometric Whittaker Model</a>
+          <a class="button"
+             href="https://arxiv.org/abs/2412.05092">
+            A Construction of the Symmetric Monoidal Structure of the Geometric Whittaker Model
+          </a>
           <br />
-          <span class="meta">Joint work with Tanmay Deshpande. Accepted for publication in IMRN.</span>
+          <span class="meta">
+            Joint work with Tanmay Deshpande. Accepted for publication in IMRN.
+          </span>
+        </li>
+      </ul>
+
+      <h3>Upcoming work</h3>
+
+      <ul>
+        <li>
+          <strong>On Logarithmic Syntomification</strong>
+        </li>
+
+        <li>
+          <strong>Artin Vanishing Along the ℓ-adic Tower of an Abelian Variety</strong>
         </li>
       </ul>
     </section>
 
+
     <section id="teaching">
       <h2>Teaching at Boston University</h2>
-      <p class="meta">I will add course catalogue links and further details here.</p>
+
       <ul>
         <li><strong>Fall 2024:</strong> Linear Algebra</li>
         <li><strong>Spring 2025:</strong> Complex Analysis</li>
@@ -190,9 +244,17 @@
       </ul>
     </section>
 
+
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a class="button" href="mailto:ashutosh@bu.edu">ashutosh@bu.edu</a></p>
+
+      <p>
+        Email:
+        <a class="button" href="mailto:ashutosh@bu.edu">
+          ashutosh@bu.edu
+        </a>
+      </p>
+
       <p>
         Office 536<br />
         Boston University<br />
@@ -202,9 +264,12 @@
       </p>
     </section>
 
+
     <footer>
       Last updated 2026. Built with GitHub Pages.
     </footer>
+
   </main>
 </body>
 </html>
+```
